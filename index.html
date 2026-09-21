@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WNN5V2S8');</script>
+<!-- End Google Tag Manager -->
+
+<!-- UTMify: captura das UTMs -->
+<script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck data-utmify-prevent-subids async defer></script>
+
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<title>Tênis SPEED Esportivo Unissex — 2 Pares por R$149,90</title>
+<meta name="description" content="Tênis Speed unissex disponível em 4 cores. Escolha 2 pares por R$149,90."><link rel="preload" as="image" href="assets/landing/produto/branco-1.webp" fetchpriority="high">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WNN5V2S8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="top-bar">Enviamos para todo o Brasil</div>
+
+<header class="site-header">
+  <div class="container site-header-inner">
+    <nav class="site-nav" aria-label="Navegação">
+      <a href="#top">Início</a>
+      <a href="#produto">Tênis Speed</a>
+      <a href="#rodape-contato">Contato</a>
+    </nav>
+    <a href="#top" class="site-logo">
+      <img src="assets/landing/speed-logo.webp" alt="SPEED">
+    </a>
+    <div class="site-header-trust">🔒 Compra segura</div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ====================================================================
+       PRIMEIRA DOBRA
+       Ordem (segue a referência): badge -> título -> avaliações -> preço
+       -> cor -> tamanho -> oferta de 2 pares -> CTA -> frete/trocas
+       ==================================================================== -->
+  <section class="product-section" id="produto">
+    <div class="container">
+      <div class="product-grid">
+
+        <!-- GALERIA -->
+        <div class="product-gallery">
+          <div class="gallery-main media" id="gallery-main-wrap">
+            <img id="gallery-main-img" alt="" loading="eager">
+            <div class="media-placeholder">
+              <span class="ph-icon">🖼️</span>
+              <span class="ph-label">assets/landing/produto/</span>
+            </div>
+            <button type="button" class="gallery-arrow gallery-arrow-prev" id="gallery-prev" aria-label="Foto anterior">‹</button>
+            <button type="button" class="gallery-arrow gallery-arrow-next" id="gallery-next" aria-label="Próxima foto">›</button>
+          </div>
+          <div class="gallery-thumbs" id="gallery-thumbs"></div>
+        </div>
+
+        <!-- INFORMAÇÕES DE COMPRA -->
+        <div class="product-info">
+          <span class="product-badge">Tênis Esportivo Unissex</span>
+
+          <h1 class="product-title">Tênis SPEED Esportivo Unissex</h1>
+
+          <!-- Sem nota/avaliação inventada. Só aparece quando REVIEWS (config.js) tiver dados. -->
+          <div class="product-rating" id="product-rating" style="display:none;">
+            <span class="stars" id="product-rating-stars"></span>
+            <span id="product-rating-text"></span>
+          </div>
+
+          <div class="price-row">
+            <span class="price-value">R$149,90</span>
+            <span class="price-old">R$299,80</span>
+            <span class="price-discount-badge">Economize 50%</span>
+          </div>
+          <p class="price-note">2 pares na oferta</p>
+
+          <!-- ESCOLHA SEUS 2 PARES — bloco único, Par 1 e Par 2 com a mesma estrutura -->
+          <p class="offer-heading">Escolha seus 2 pares</p>
+          <p class="offer-subtitle">Escolha a cor e o tamanho de cada par.</p>
+          <button type="button" class="size-guide-btn" id="size-guide-open">
+            <span class="size-guide-btn-icon">📏</span> Guia de tamanhos
+          </button>
+
+          <div class="offer-card">
+            <div class="offer-card-top">
+              <span class="offer-card-badge">2 pares</span>
+              <span class="offer-card-heading">R$149,90</span>
+            </div>
+
+            <div class="offer-pair">
+              <p class="offer-pair-title">Par 1</p>
+              <p class="option-label">Cor</p>
+              <div class="swatch-row" id="colors-pair1"></div>
+              <p class="option-label">Tamanho</p>
+              <div class="size-row" id="sizes-pair1"></div>
+            </div>
+
+            <div class="offer-divider"></div>
+
+            <div class="offer-pair">
+              <p class="offer-pair-title">Par 2</p>
+              <p class="option-label">Cor</p>
+              <div class="swatch-row" id="colors-pair2"></div>
+              <p class="option-label">Tamanho</p>
+              <div class="size-row" id="sizes-pair2"></div>
+            </div>
+
+            <div class="offer-divider"></div>
+
+            <div class="offer-status" id="offer-status">
+              <p class="offer-status-pending">Selecione a cor e o tamanho dos dois pares.</p>
+            </div>
+
+            <div class="offer-total-row">
+              <span>Total</span>
+              <span>R$149,90</span>
+            </div>
+          </div>
+
+          <button type="button" class="cta-button" id="cta-main" disabled>Comprar meus 2 pares</button>
+
+          <!-- ====================================================================
+               BLOCOS PÓS-CTA — ordem: disponibilidade -> pagamento -> frete ->
+               trocas/devoluções -> selo Líder Platinum. Textos/quantidade vêm
+               de js/config.js (initTrustBlocks / initTrustBadge em main.js).
+               ==================================================================== -->
+          <div class="post-cta-blocks">
+
+            <!-- DISPONIBILIDADE — texto/número vêm de STOCK_QUANTITY em config.js -->
+            <div class="stock-card" id="stock-card">
+              <p class="stock-card-text" id="stock-card-text">Em estoque</p>
+              <div class="stock-card-bar" id="stock-card-bar" style="display:none;">
+                <div class="stock-card-bar-fill" id="stock-card-bar-fill"></div>
+              </div>
+            </div>
+
+            <!-- PAGAMENTO — só aparece se PAYMENT_METHODS tiver dados reais -->
+            <div class="payment-strip" id="payment-strip" style="display:none;">
+              <span class="payment-strip-label">Pagamento</span>
+              <div class="payment-strip-list" id="payment-strip-list"></div>
+            </div>
+
+            <!-- FRETE -->
+            <div class="info-card">
+              <span class="info-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="7" width="13" height="9"></rect><path d="M14 10h4l3 3v3h-7z"></path><circle cx="6" cy="18" r="1.6"></circle><circle cx="17" cy="18" r="1.6"></circle></svg>
+              </span>
+              <div class="info-card-text">
+                <p class="info-card-line1"><strong id="shipping-bold"></strong> <span id="shipping-normal"></span></p>
+                <p class="info-card-highlight" id="shipping-highlight"></p>
+              </div>
+            </div>
+
+            <!-- DEVOLUÇÕES -->
+            <div class="info-card">
+              <span class="info-card-icon info-card-icon-success" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5z"></path><path d="M8.5 12l2.3 2.3L16 9.5"></path></svg>
+              </span>
+              <div class="info-card-text">
+                <p class="info-card-highlight" id="returns-title"></p>
+                <p class="info-card-line" id="returns-line1"></p>
+                <p class="info-card-line" id="returns-line2"></p>
+              </div>
+            </div>
+
+            <!-- SELO LÍDER PLATINUM — imagem real, TRUST_BADGE_IMAGE em config.js -->
+            <div class="trust-badge-wrap media" id="trust-badge-wrap">
+              <img class="trust-badge-image" id="trust-badge-img" data-media-check alt="Selo Líder Platinum">
+              <div class="media-placeholder">
+                <span class="ph-icon">🖼️</span>
+                <span class="ph-label">assets/landing/lider-platinum.png</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       EDITORIAL 1 — USO / LIFESTYLE. Imagem vem de showcase-1.webp; troque
+       só o arquivo em assets/landing/produto/ que a estrutura acompanha.
+       ==================================================================== -->
+  <section class="editorial section-border">
+    <div class="container editorial-inner">
+      <div class="editorial-media media">
+        <img data-media-check src="assets/landing/produto/showcase-1.webp" alt="Tênis Speed sendo usado na academia" loading="lazy">
+        <div class="media-placeholder">
+          <span class="ph-icon">🖼️</span>
+          <span class="ph-label">assets/landing/produto/showcase-1.webp</span>
+        </div>
+      </div>
+      <div class="editorial-text">
+        <span class="editorial-eyebrow">Para a sua rotina</span>
+        <h2>Academia. Caminhada. Dia a dia.</h2>
+        <p>O Tênis SPEED combina visual esportivo, leveza e conforto para acompanhar diferentes momentos da rotina. Uma opção versátil para academia, caminhadas, treinos e também para o uso no dia a dia.</p>
+        <ul class="editorial-benefits">
+          <li>Leve</li>
+          <li>Confortável</li>
+          <li>Versátil</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       EDITORIAL 2 — DETALHES DO PRODUTO. Imagem vem de showcase-2.webp;
+       troque só o arquivo que a estrutura acompanha.
+       ==================================================================== -->
+  <section class="editorial editorial-reverse section-border">
+    <div class="container editorial-inner">
+      <div class="editorial-media media">
+        <img data-media-check src="assets/landing/produto/showcase-2.webp" alt="Detalhe do Tênis SPEED preto" loading="lazy">
+        <div class="media-placeholder">
+          <span class="ph-icon">🖼️</span>
+          <span class="ph-label">assets/landing/produto/showcase-2.webp</span>
+        </div>
+      </div>
+      <div class="editorial-text">
+        <h2>Conheça o SPEED de perto</h2>
+        <ol class="editorial-detail-list">
+          <li>
+            <span class="editorial-detail-number">01</span>
+            <div class="editorial-detail-body">
+              <strong>Cabedal leve e respirável</strong>
+              <p>Construção pensada para oferecer conforto e ventilação durante o uso.</p>
+            </div>
+          </li>
+          <li>
+            <span class="editorial-detail-number">02</span>
+            <div class="editorial-detail-body">
+              <strong>Interior acolchoado</strong>
+              <p>Ajuste confortável para acompanhar caminhadas, treinos e a rotina diária.</p>
+            </div>
+          </li>
+          <li>
+            <span class="editorial-detail-number">03</span>
+            <div class="editorial-detail-body">
+              <strong>Entressola com amortecimento confortável</strong>
+              <p>Construção mais alta que ajuda a proporcionar uma pisada agradável durante o uso.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       POR QUE ESCOLHER O SPEED — grid de benefícios, sem cards (ícone
+       discreto + título + descrição curta, separados por espaço em branco
+       no desktop e divisórias finas no mobile).
+       ==================================================================== -->
+  <section class="section section-border">
+    <div class="container">
+      <h2 class="section-title-simple">Por que escolher o SPEED?</h2>
+      <div class="benefits-grid">
+        <div class="benefit-item">
+          <span class="benefit-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7.5-4.5-9.5-9C1 7.5 2.5 4.5 6 4.5c2 0 3.5 1.2 4 2.3.5-1.1 2-2.3 4-2.3 3.5 0 5 3 3.5 6.5-2 4.5-9.5 9-9.5 9z"></path></svg></span>
+          <strong>Conforto para o dia a dia</strong>
+          <p>Interior acolchoado e construção confortável para diferentes momentos da rotina.</p>
+        </div>
+        <div class="benefit-item">
+          <span class="benefit-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4c-6 1-12 5-14 12l-2 4 4-2c7-2 11-8 12-14z"></path><path d="M8.5 15.5l7-7"></path></svg></span>
+          <strong>Leveza</strong>
+          <p>Estrutura leve para caminhar, treinar e utilizar durante o cotidiano.</p>
+        </div>
+        <div class="benefit-item">
+          <span class="benefit-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 13c2-4 4-4 6 0s4 4 6 0 4-4 6 0"></path></svg></span>
+          <strong>Amortecimento confortável</strong>
+          <p>Entressola mais alta que proporciona uma sensação agradável durante a pisada.</p>
+        </div>
+        <div class="benefit-item">
+          <span class="benefit-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5l3 6.4 7 1-5 5 1.2 7-6.2-3.4-6.2 3.4 1.2-7-5-5 7-1z"></path></svg></span>
+          <strong>Design moderno e versátil</strong>
+          <p>Visual esportivo que combina com roupas de treino e também com looks casuais.</p>
+        </div>
+        <div class="benefit-item">
+          <span class="benefit-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10a2.5 2.5 0 1 0-2.5-2.5"></path><path d="M3 12.5h13a2.5 2.5 0 1 1-2.5 2.5"></path><path d="M3 17h7"></path></svg></span>
+          <strong>Respirabilidade</strong>
+          <p>Cabedal leve e respirável para maior conforto durante o uso.</p>
+        </div>
+        <div class="benefit-item">
+          <span class="benefit-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5z"></path></svg></span>
+          <strong>Durabilidade</strong>
+          <p>Construção resistente para acompanhar diferentes atividades do dia a dia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       ESPECIFICAÇÕES — lista simples
+       ==================================================================== -->
+  <section class="section section-border">
+    <div class="container">
+      <h2 class="section-title-simple">Especificações</h2>
+      <ul class="specs-list">
+        <li><span>Nome</span><span>Tênis SPEED Esportivo</span></li>
+        <li><span>Gênero</span><span>Unissex</span></li>
+        <li><span>Cabedal</span><span>Material sintético leve e respirável</span></li>
+        <li><span>Interior</span><span>Acolchoado</span></li>
+        <li><span>Entressola</span><span>Com amortecimento confortável</span></li>
+        <li><span>Solado</span><span>Resistente</span></li>
+        <li><span>Indicação</span><span>Academia, caminhada, treino e uso cotidiano</span></li>
+        <li><span>Cores</span><span>Preto, Branco/Turquesa, Cinza/Turquesa e Rosa</span></li>
+        <li><span>Numeração</span><span>34 ao 44</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       ESCOLHA O TAMANHO IDEAL — bloco de transição compacto que abre o
+       MESMO modal do "Guia de tamanhos" (id="size-guide-modal", já
+       existente no fim da página) — não é uma segunda tabela.
+       ==================================================================== -->
+  <section class="section section-border">
+    <div class="container">
+      <div class="size-cta">
+        <div class="size-cta-text">
+          <h2 class="section-title-simple">Escolha o tamanho ideal</h2>
+          <p>Consulte as medidas da palmilha antes de escolher sua numeração.</p>
+        </div>
+        <button type="button" class="size-cta-btn size-guide-open-trigger">Ver tabela de medidas</button>
+      </div>
+      <!-- No mobile a tabela já aparece aberta aqui (sem precisar clicar);
+           no desktop fica escondida e o botão acima abre o modal. -->
+      <div class="size-cta-inline-table media">
+        <img data-media-check src="assets/landing/produto/tabela-medidas.webp" alt="Tabela de medidas do Tênis Speed" loading="lazy">
+        <div class="media-placeholder">
+          <span class="ph-icon">🖼️</span>
+          <span class="ph-label">assets/landing/produto/tabela-medidas.webp</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       NA VIDA REAL — galeria geral de 4 vídeos (sem organização por cor),
+       tocam inline no próprio card (sem lightbox, sem filtros). Conteúdo
+       vem de REALLIFE_VIDEOS em js/config.js — não hardcode caminho aqui.
+       ==================================================================== -->
+  <section class="section section-border">
+    <div class="container">
+      <h2 class="section-title-simple">Veja o SPEED na vida real</h2>
+      <p class="section-lead">Quer ver como o SPEED fica fora das fotos de produto? Confira alguns vídeos mostrando o modelo em detalhes e em uso.</p>
+      <div class="reallife-grid" id="reallife-grid"></div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       AVALIAÇÕES — mantida, estrutura pronta, sem dados inventados
+       ==================================================================== -->
+  <section class="section section-border" id="avaliacoes">
+    <div class="container">
+      <h2 class="section-title-simple">Avaliações de clientes</h2>
+
+      <div class="reviews-summary" id="reviews-summary">
+        <div class="reviews-summary-score-col">
+          <div class="reviews-summary-score" id="reviews-score">0,0</div>
+          <div class="reviews-summary-stars" id="reviews-stars">☆☆☆☆☆</div>
+          <div class="reviews-summary-count" id="reviews-count">0 avaliações</div>
+        </div>
+
+        <div class="reviews-distribution" id="reviews-distribution"></div>
+
+        <div class="reviews-summary-actions">
+          <button type="button" class="reviews-write-btn">Escrever avaliação</button>
+          <select class="reviews-filter-select" id="reviews-filter-select" aria-label="Filtrar avaliações por nota">
+            <option value="todas">Todas</option>
+            <option value="5">5 estrelas</option>
+            <option value="4">4 estrelas</option>
+            <option value="3">3 estrelas</option>
+            <option value="2">2 estrelas</option>
+            <option value="1">1 estrela</option>
+          </select>
+        </div>
+      </div>
+
+      <p class="reviews-empty" id="reviews-empty">
+        Ainda não há avaliações publicadas. Assim que as avaliações reais forem enviadas, elas aparecerão aqui.
+      </p>
+
+      <div class="reviews-grid" id="reviews-grid"></div>
+      <p class="reviews-filter-empty" id="reviews-filter-empty" style="display:none;">Nenhuma avaliação com essa nota.</p>
+
+      <button type="button" class="reviews-more" id="reviews-more" style="display:none;">Ler mais</button>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       COMPRE COM MAIS TRANQUILIDADE — garantia + 4 informações curtas,
+       sem cards grandes.
+       ==================================================================== -->
+  <section class="section section-border">
+    <div class="container">
+      <h2 class="section-title-simple">Compre com mais tranquilidade</h2>
+      <p class="section-lead">Você conta com garantia de 30 dias conforme as condições da nossa política de devolução.</p>
+      <div class="trust-grid">
+        <div class="trust-grid-item">
+          <span class="trust-grid-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="12" rx="1"></rect><path d="M3 8l9-5 9 5"></path><path d="M3 8l9 5 9-5"></path></svg>
+          </span>
+          <strong>Rastreamento</strong>
+          <p>Acompanhe as atualizações do envio do seu pedido.</p>
+        </div>
+        <div class="trust-grid-item">
+          <span class="trust-grid-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="1.5"></rect><path d="M8 11V7a4 4 0 0 1 8 0v4"></path></svg>
+          </span>
+          <strong>Compra segura</strong>
+          <p>Ambiente protegido durante o processo de compra.</p>
+        </div>
+        <div class="trust-grid-item">
+          <span class="trust-grid-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="7" width="13" height="9"></rect><path d="M14 10h4l3 3v3h-7z"></path><circle cx="6" cy="18" r="1.6"></circle><circle cx="17" cy="18" r="1.6"></circle></svg>
+          </span>
+          <strong>Frete grátis</strong>
+          <p>Envio gratuito para todo o Brasil, com entrega em 3 a 7 dias.</p>
+        </div>
+        <div class="trust-grid-item">
+          <span class="trust-grid-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13v-1a8 8 0 0 1 16 0v1"></path><rect x="3" y="13" width="4" height="6" rx="1.5"></rect><rect x="17" y="13" width="4" height="6" rx="1.5"></rect><path d="M20 19v1a2 2 0 0 1-2 2h-4"></path></svg>
+          </span>
+          <strong>Atendimento</strong>
+          <p>Suporte ao cliente antes e depois da compra.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div id="rodape-contato">
+        <p class="footer-col-title">Atendimento</p>
+        <ul class="footer-links">
+          <li class="footer-placeholder">Tel: (19) 3351-3956</li>
+          <li class="footer-placeholder">WhatsApp: (19) 99642-3146</li>
+          <li class="footer-placeholder"><a href="mailto:suporte@tenispeed.shop">suporte@tenispeed.shop</a></li>
+          <li class="footer-placeholder">Seg a Sex: 9h às 18h | Sáb: 9h às 15h</li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">No site</p>
+        <ul class="footer-links">
+          <li><a href="#top">Início</a></li>
+          <li><a href="#produto">Tênis Speed</a></li>
+          <li><a href="#avaliacoes">Avaliações</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Links úteis</p>
+        <ul class="footer-links">
+          <li><a href="politicas-de-privacidade.html">Política de Privacidade</a></li>
+          <li><a href="politica-de-troca-e-devolucao.html">Trocas e Devoluções</a></li>
+          <li><a href="termos-de-uso.html">Termos de Serviço</a></li>
+          <li><a href="fale-conosco.html">Fale Conosco</a></li>
+          <li><a href="sobre-a-empresa.html">Sobre a Empresa</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Compre com segurança</p>
+        <ul class="footer-links">
+          <li class="footer-placeholder">Pagamento protegido</li>
+          <li class="footer-placeholder">Dados criptografados</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      Speed Tennis Ltda - ME · CNPJ: 49.983.080/0001-31 · R. Sete de Setembro, 474 - Araras - SP, CEP 13600-130<br>
+      © 2026 Tênis Speed. Todos os direitos reservados.
+    </div>
+  </div>
+</footer>
+
+<!-- GUIA DE TAMANHOS — modal simples com a foto real da tabela de medidas -->
+<div class="size-guide-modal" id="size-guide-modal" aria-hidden="true">
+  <div class="size-guide-backdrop" id="size-guide-backdrop"></div>
+  <div class="size-guide-panel" role="dialog" aria-modal="true" aria-label="Guia de tamanhos">
+    <button type="button" class="size-guide-close" id="size-guide-close" aria-label="Fechar">×</button>
+    <p class="size-guide-title">Guia de tamanhos — Tênis SPEED</p>
+    <img src="assets/landing/produto/tabela-medidas.webp" alt="Tabela de medidas do Tênis Speed">
+  </div>
+</div>
+
+<!-- AVALIAÇÕES — lightbox pra ver as fotos de cada review em tamanho grande -->
+<div class="review-lightbox" id="review-lightbox" aria-hidden="true">
+  <div class="review-lightbox-backdrop" id="review-lightbox-backdrop"></div>
+  <div class="review-lightbox-panel" role="dialog" aria-modal="true" aria-label="Foto da avaliação ampliada">
+    <button type="button" class="review-lightbox-close" id="review-lightbox-close" aria-label="Fechar">×</button>
+    <button type="button" class="review-lightbox-arrow review-lightbox-prev" id="review-lightbox-prev" aria-label="Foto anterior">‹</button>
+    <img id="review-lightbox-img" alt="">
+    <button type="button" class="review-lightbox-arrow review-lightbox-next" id="review-lightbox-next" aria-label="Próxima foto">›</button>
+  </div>
+</div>
+
+<!-- STICKY CTA MOBILE -->
+<div class="sticky-cta" id="sticky-cta">
+  <div class="sticky-cta-info">
+    <div class="sticky-cta-price">2 pares — R$149,90</div>
+    <div class="sticky-cta-note">Complete a seleção dos dois pares</div>
+  </div>
+  <button type="button" class="cta-button" id="cta-sticky" disabled>Comprar</button>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
